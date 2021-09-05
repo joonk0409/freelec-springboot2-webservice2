@@ -38,10 +38,11 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testCompile("pl.pragmatists:JUnitParams:1.1.0")
     testCompile("org.springframework.boot:spring-boot-starter-test")
-    testCompile("org.assertj:assertj-core:3.11.1")
+    testCompile("org.assertj:assertj-core:3.12.2")
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
+    testImplementation('org.assertj:assertj-core:3.12.2')
     compile('org.projectlombok:lombok')
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile('com.h2database:h2')

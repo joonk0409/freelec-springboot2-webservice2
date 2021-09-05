@@ -1,5 +1,6 @@
 package com.jojodu.book.springboot.domain.posts;
 
+import com.jojoldu.book.springboot.Application;
 import com.jojoldu.book.springboot.domain.Posts;
 import com.jojoldu.book.springboot.domain.PostsRepository;
 import org.junit.After;
@@ -11,8 +12,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(classes = Application.class)
 public class PostsRepositoryTest {
 
     @Autowired
@@ -40,7 +43,8 @@ public class PostsRepositoryTest {
 
         //then
         Posts posts = postsList.get(0);
-
+        assertThat(posts.getTitle()).isEqualTo(title);
+        assertThat(posts.getContent()).isEqualTo(content);
     }
 
 }
