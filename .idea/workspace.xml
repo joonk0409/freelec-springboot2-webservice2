@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e61b4f02-5888-44b2-a684-10ab5d23da1c" name="Default Changelist" comment="Entity, Service, Controller 생성">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/service/posts/PostsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/web/PostsApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/web/dto/PostsSaveRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="e61b4f02-5888-44b2-a684-10ab5d23da1c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/web/dto/PostsResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/web/dto/PostsUpdateRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jojodu/book/springboot/web/PostsApiControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jojodu/book/springboot/domain/posts/PostsRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jojodu/book/springboot/domain/posts/PostsRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/Posts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/service/posts/PostsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/service/posts/PostsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/web/PostsApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/web/PostsApiController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +235,9 @@
       <updated>1624189172342</updated>
       <workItem from="1630232176682" duration="4182000" />
       <workItem from="1630237440040" duration="1874000" />
-      <workItem from="1630840829806" duration="6105000" />
+      <workItem from="1630840829806" duration="6494000" />
+      <workItem from="1630848089739" duration="7000" />
+      <workItem from="1631442860488" duration="3733000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore 등록">
       <created>1624279600322</created>
@@ -272,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630842463260</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Entity, Service, Controller 생성">
+      <created>1630847691729</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1630847691730</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
