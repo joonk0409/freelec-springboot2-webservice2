@@ -9,7 +9,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Entity
 @Getter
-public class Posts {
+public class Posts extends BaseTimeEntity {
     //DB의 테이블과 매칭될 클래스
     //Entity클래스에서는 Setter를 생성하지 않는다.
 
@@ -36,5 +36,8 @@ public class Posts {
         this.title = title;
         this.content = content;
     }
+
+    //2021-11-07
+
 
 }
