@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e61b4f02-5888-44b2-a684-10ab5d23da1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/web/IndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jojodu/book/springboot/web/IndexControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/web/TestIndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jojodu/book/springboot/web/PostsApiControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jojodu/book/springboot/web/PostsApiControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/web/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/web/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jojodu/book/springboot/web/IndexControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jojodu/book/springboot/web/IndexControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +135,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -147,11 +146,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.IndexControllerTest.메인페이지_로딩">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="freelec-springboot2-webservice [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -173,6 +175,37 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="HelloResponseDtoTest.롬복_기능_테스트" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="freelec-springboot2-webservice.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jojodu.book.springboot.dto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jojodu.book.springboot.dto" />
+      <option name="MAIN_CLASS_NAME" value="com.jojodu.book.springboot.dto.HelloResponseDtoTest" />
+      <option name="METHOD_NAME" value="롬복_기능_테스트" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IndexControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="freelec-springboot2-webservice.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jojodu.book.springboot.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jojodu.book.springboot.web" />
+      <option name="MAIN_CLASS_NAME" value="com.jojodu.book.springboot.web.IndexControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IndexControllerTest.메인페이지_로딩" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="freelec-springboot2-webservice.test" />
       <extension name="coverage">
@@ -189,60 +222,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostsRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="freelec-springboot2-webservice.test" />
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="freelec-springboot2-webservice.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jojodu.book.springboot.domain.posts.*" />
+          <option name="PATTERN" value="com.jojoldu.book.springboot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jojodu.book.springboot.domain.posts" />
-      <option name="MAIN_CLASS_NAME" value="com.jojodu.book.springboot.domain.posts.PostsRepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostsRepositoryTest.BaseTimeEntity_등록" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="freelec-springboot2-webservice.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jojodu.book.springboot.domain.posts.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jojodu.book.springboot.domain.posts" />
-      <option name="MAIN_CLASS_NAME" value="com.jojodu.book.springboot.domain.posts.PostsRepositoryTest" />
-      <option name="METHOD_NAME" value="BaseTimeEntity_등록" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostsRepositoryTest.게시글저장_불러오기" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="freelec-springboot2-webservice.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jojodu.book.springboot.domain.posts.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jojodu.book.springboot.domain.posts" />
-      <option name="MAIN_CLASS_NAME" value="com.jojodu.book.springboot.domain.posts.PostsRepositoryTest" />
-      <option name="METHOD_NAME" value="게시글저장_불러오기" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jojoldu.book.springboot.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Application" />
         <item itemvalue="JUnit.IndexControllerTest.메인페이지_로딩" />
+        <item itemvalue="JUnit.IndexControllerTest" />
+        <item itemvalue="JUnit.HelloResponseDtoTest.롬복_기능_테스트" />
         <item itemvalue="Gradle.freelec-springboot2-webservice [dependencies]" />
-        <item itemvalue="JUnit.PostsRepositoryTest.BaseTimeEntity_등록" />
-        <item itemvalue="JUnit.PostsRepositoryTest.게시글저장_불러오기" />
-        <item itemvalue="JUnit.PostsRepositoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -263,6 +262,8 @@
       <workItem from="1636289206731" duration="2174000" />
       <workItem from="1636291820106" duration="1104000" />
       <workItem from="1636293058285" duration="2050000" />
+      <workItem from="1636295135102" duration="85000" />
+      <workItem from="1638710974155" duration="2007000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore 등록">
       <created>1624279600322</created>
@@ -320,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636291111419</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="2021-11-07(2)">
+      <created>1636295201813</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1636295201813</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +352,8 @@
     <MESSAGE value="Entity, Service, Controller 생성" />
     <MESSAGE value="2021-09-12" />
     <MESSAGE value="2021-11-07" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021-11-07" />
+    <MESSAGE value="2021-11-07(2)" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021-11-07(2)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -356,6 +365,19 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/jojodu/book/springboot/dto/HelloResponseDtoTest.java</url>
+          <line>10</line>
+          <properties class="com.jojodu.book.springboot.dto.HelloResponseDtoTest" method="롬복_기능_테스트">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/web/IndexController.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
