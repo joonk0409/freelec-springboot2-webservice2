@@ -4,16 +4,19 @@ import com.jojoldu.book.springboot.service.posts.PostsService;
 import com.jojoldu.book.springboot.web.dto.PostsResponseDto;
 import com.jojoldu.book.springboot.web.dto.PostsSaveRequestDto;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.java.Log;
 import org.springframework.web.bind.annotation.*;
 
 @RequiredArgsConstructor
 @RestController
+@Log
 public class PostsApiController {
 
     private final PostsService postsService;
     
     @PostMapping("/api/v1/posts")
     public Long save(@RequestBody PostsSaveRequestDto requestDto){
+        log.info(">>>>>>>>>>>>>>>>>>> "+"/api/v1/posts");
         return postsService.save(requestDto);
     }
 
