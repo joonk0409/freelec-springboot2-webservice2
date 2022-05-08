@@ -2,6 +2,7 @@ var main = {
     init : function () {
         var _this = this;
         $('#btn-save').on('click', function () {
+            alert("SAVE");
             _this.save();
         });
 
@@ -19,6 +20,8 @@ var main = {
             author: $('#author').val(),
             content: $('#content').val()
         };
+
+        console.log(">>>>>>> "+data);
 
         $.ajax({
             type: 'POST',
@@ -72,4 +75,6 @@ var main = {
 
 };
 
+
 main.init();
+
