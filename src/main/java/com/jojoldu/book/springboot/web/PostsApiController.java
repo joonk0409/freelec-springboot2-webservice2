@@ -3,6 +3,7 @@ package com.jojoldu.book.springboot.web;
 import com.jojoldu.book.springboot.service.posts.PostsService;
 import com.jojoldu.book.springboot.web.dto.PostsResponseDto;
 import com.jojoldu.book.springboot.web.dto.PostsSaveRequestDto;
+import com.jojoldu.book.springboot.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.java.Log;
 import org.springframework.web.bind.annotation.*;
@@ -22,7 +23,22 @@ public class PostsApiController {
 
     @GetMapping("/api/v1/posts/{id}")
     public PostsResponseDto findById(@PathVariable Long id){
+        log.info(">>>>>>> select");
+        log.info(">>>>>>>>>>>>>>>>>>> "+"/api/v1/posts"+"/"+id);
         return  postsService.findById(id);
 
+    }
+
+    @PutMapping("/api/v1/posts/{id}")
+    public Long update(@PathVariable Long id , @RequestBody PostsUpdateRequestDto requestDto){ //update
+        log.info(">>>>>>> updae");
+        log.info(">>>>>>>>>>>>>>>>>>> "+"/api/v1/posts"+"/"+id);
+        return postsService.Update(id, requestDto);
+    }
+
+    @DeleteMapping("/api/v1/posts/{id}")
+    public Long delete(@PathVariable Long id){
+        postsService.delete(id);
+        return id;
     }
 }

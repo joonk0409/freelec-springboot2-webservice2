@@ -1,13 +1,17 @@
 package com.jojoldu.book.springboot.web;
 
 import com.jojoldu.book.springboot.service.posts.PostsService;
+import com.jojoldu.book.springboot.web.dto.PostsResponseDto;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 @Controller
 @RequiredArgsConstructor
+@Log4j2
 public class IndexController {
 
     private final PostsService postsService;
@@ -21,5 +25,19 @@ public class IndexController {
     @GetMapping("/posts/save")
     public String postSave(){
         return "posts-save";
+    }
+
+    @GetMapping("/posts/update/{id}")
+    public String postsUpdate(@PathVariable Long id , Model model){
+
+        log.info("id >>>> "+id);
+        log.info("model >>>> "+model);
+
+        PostsResponseDto dto = postsService.findById(id); //select
+
+        log.info("dto result >>>>>>> "+dto.getAuthor());
+        model.addAttribute("post",dto);
+
+        return "posts-update";
     }
 }

@@ -7,6 +7,7 @@ var main = {
         });
 
         $('#btn-update').on('click', function () {
+            console.log("update function start");
             _this.update();
         });
 
@@ -42,7 +43,11 @@ var main = {
             content: $('#content').val()
         };
 
+        console.log("UPDATE DATA >>> "+data);
+
         var id = $('#id').val();
+
+        console.log("UPDATE");
 
         $.ajax({
             type: 'PUT',
@@ -54,6 +59,7 @@ var main = {
             alert('글이 수정되었습니다.');
             window.location.href = '/';
         }).fail(function (error) {
+            alert("UPDATE ERROR");
             alert(JSON.stringify(error));
         });
     },
